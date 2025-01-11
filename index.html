@@ -5,19 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title lang="en">GoTravel</title>
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap"
       rel="stylesheet"
-    /> -->
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&display=swap"
       rel="stylesheet"
     />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -25,338 +22,436 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!-- Header -->
+
     <header class="header">
-      <a href="./index.html"><img src="./images/logo.svg" alt="Логотип" /></a>
-      <nav>
-        <ul>
-          <li><a href="./index.html">Головна</a></li>
-          <li><a href="./excursions.html">Екскурсії</a></li>
-          <li><a href="./personal.html">Особистий кабінет</a></li>
-        </ul>
-      </nav>
+      <div class="container header-content">
+        <a href="./index.html" class="link logo"></a>
+        <nav>
+          <ul class="navigation-list">
+            <li>
+              <a href="./index.html" class="link navigation-link current"
+                >Головна</a
+              >
+            </li>
+            <li>
+              <a href="./excursions.html" class="link navigation-link"
+                >Екскурсії</a
+              >
+            </li>
+            <li>
+              <a href="./personal.html" class="link navigation-link"
+                >Особистий кабінет</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
+
+    <!-- Hero -->
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-title-wrapper">
+          <h1 class="hero-title">
+            Подорожуй
+            <span class="hero-title-accent animate__animated animate__heartBeat"
+              >разом з</span
+            >
+            <span class="hero-title-stroke">GoTravel</span>
+          </h1>
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="" lang="en" class="link social-link"
+                ><svg class="social-icon">
+                  <use href="./images/icons.svg#icon-youtube"></use></svg
+              ></a>
+            </li>
+            <li class="social-item">
+              <a href="" lang="en" class="link social-link"
+                ><svg class="social-icon">
+                  <use href="./images/icons.svg#icon-inst"></use></svg
+              ></a>
+            </li>
+            <li class="social-item">
+              <a href="" lang="en" class="link social-link"
+                ><svg class="social-icon">
+                  <use href="./images/icons.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <a href="./excursions.html" class="link excursions">До екскурсій</a>
+      </div>
+    </section>
+
+    <!-- Swiper -->
+
     <main>
-      <section class="hero">
-        <h1 class="hero-title">
-          Подорожуй <span class="hero-title-accent">разом з</span>
-          <span class="hero-title-stroke">GoTravel</span>
-        </h1>
-        <a href="./excursions.html">До екскурсій</a>
-        <ul>
-          <li><a href="" lang="en">YouTube</a></li>
-          <li><a href="" lang="en">Instagram</a></li>
-          <li><a href="" lang="en">FaceBook</a></li>
-        </ul>
-        <ul>
-          <li>
-            <video
-              src="poster"
-              =""
-              width="360"
-              height="227"
-              controls
-              autoplay
-              loop
-              preload="auto"
-            ></video>
-          </li>
-          <li>
-            <video
-              src="poster"
-              =""
-              width="360"
-              height="227"
-              controls
-              autoplay
-              loop
-              preload="auto"
-            ></video>
-          </li>
-        </ul>
+      <section class="swiper">
+        <div class="swiper container">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <video
+                class="swiper-video"
+                poster="./images/poster01.jpg"
+                width="360"
+                height="227"
+                controls
+                autoplay
+                loop
+                preload="auto"
+              >
+                <source src="./video/video01.mp4" type="video/mp4" />
+                <source src="./video/video01-webm.webm" type="video/webm" />
+                Ваш браузер не підтримує елемент <code>video</code>.
+              </video>
+            </li>
+            <li class="swiper-slide">
+              <video
+                class="swiper-video"
+                poster="./images/poster02.jpg"
+                width="360"
+                height="227"
+                controls
+                autoplay
+                loop
+                preload="auto"
+              >
+                <source src="./video/video02.mp4" type="video/mp4" />
+                <source src="./video/video02-webm.webm" type="video/webm" />
+                Ваш браузер не підтримує елемент <code>video</code>.
+              </video>
+            </li>
+          </ul>
+        </div>
       </section>
 
-      <section>
-        <h2>Популярні екскурсії</h2>
-        <a href="./excursions.html">Дивитися всі</a>
-        <ul>
-          <li>
-            <img
-              src="./images/survey-of-crimea.jpg"
-              alt="Оглядова екскурсія по Криму"
-              width="360"
-              height="497"
-            />
-          </li>
-          <li>
-            <p>Автобусний тур</p>
-            <h3>Оглядова по Криму (з Ялти)</h3>
-            <p>10 годин</p>
-            <p>618 грн</p>
-            <p>
-              Крим (оглядові екскурсії) – унікальне місце, де є все необхідне
-              для сучасного туриста. Головна пам'ятка – дивовижної краси пляжі
-              Чорного моря, але це не все, що пропонує півострів туристам. В
-              такому місці, як Крим, оглядова екскурсія може містити похід в
-              гори на день або з наметами. Паломництва по святих місцях,
-              відвідування парків, палаців, історичних пам'яток – всього цього
-              удосталь пропонує екскурсійне бюро
-              <span lang="en">GoTravel</span>.
-            </p>
-            <a href="">Докладніше</a>
-          </li>
-          <li>
-            <img
-              src="./images/horseback-riding.jpg"
-              alt="Кінні прогулянки"
-              width="360"
-              height="497x"
-            />
-            <p>Кінний тур</p>
-            <h3>Кінні прогулянки</h3>
-            <p>2 години</p>
-            <p>1020 грн</p>
-            <p>
-              Кінна прогулянка йде схилами гори біля Долини привидів —
-              стародавнього кам'яного хаосу у вигляді стовпів, колон, в обрисах
-              яких вгадуються образи химерних тварин, лики людей. Під час
-              прогулянки відкриваються чарівні види Алуштинської долини,
-              морського узбережжя.
-            </p>
-            <a href="">Докладніше</a>
-          </li>
-          <li>
-            <img
-              src="./images/grand-canyon.jpg"
-              alt="Великий каньйон Криму"
-              width="360"
-              height="497"
-            />
-            <p>Квадротур</p>
-            <h3>Великий каньйон Криму</h3>
-            <p>2,5 години</p>
-            <p>1750 грн</p>
-            <p>
-              Маршрут проходить старою Бахчисарайською дорогою, огинаючи з
-              південної та північної сторони Головну гірську гряду півострова.
-              Під час руху екскурсантам відкриваються чудові краєвиди. Це і
-              гірські хребти, вкриті сосновим лісом, і горбисте Ай-Петринське
-              нагір'я, і морська гладь узбережжя.
-            </p>
-            <a href="">Докладніше</a>
-          </li>
-          <li>
-            <img
-              src="./images/livadia.jpg"
-              alt="Лівадійський палац"
-              width="360"
-              height="497"
-            />
-            <p>Автобусний тур</p>
-            <h3>Лівадія</h3>
-            <p>4 години</p>
-            <p>650 грн</p>
-            <p>
-              Маршрут проходить з Ялти до її найближчого передмістя на заході -
-              Лівадії. Ви відвідаєте Білий Лівадійський палац (1910-1911рр.) ,
-              розташований серед зелені ландшафтного парку, побудований у стилі
-              італійського Відродження.
-            </p>
-            <a href="">Докладніше</a>
-          </li>
-        </ul>
+      <!-- Popular -->
+
+      <section class="popular">
+        <div class="container">
+          <div class="popular-wrapper">
+            <h2>Популярні екскурсії</h2>
+            <a href="./excursions.html" class="link">Дивитися всі</a>
+          </div>
+          <ul class="excursions-list">
+            <li>
+              <img
+                src="./images/survey-of-crimea.jpg"
+                alt="Оглядова екскурсія по Криму"
+                width="360"
+                height="497"
+              />
+            </li>
+            <li>
+              <p>Автобусний тур</p>
+              <h3>Оглядова по Криму (з Ялти)</h3>
+              <p>10 годин</p>
+              <p>618 грн</p>
+              <p>
+                Крим (оглядові екскурсії) – унікальне місце, де є все необхідне
+                для сучасного туриста. Головна пам'ятка – дивовижної краси пляжі
+                Чорного моря, але це не все, що пропонує півострів туристам. В
+                такому місці, як Крим, оглядова екскурсія може містити похід в
+                гори на день або з наметами. Паломництва по святих місцях,
+                відвідування парків, палаців, історичних пам'яток – всього цього
+                удосталь пропонує екскурсійне бюро
+                <span lang="en">GoTravel</span>.
+              </p>
+              <a href="" class="link">Докладніше</a>
+            </li>
+            <li>
+              <img
+                src="./images/horseback-riding.jpg"
+                alt="Кінні прогулянки"
+                width="360"
+                height="497x"
+              />
+              <p>Кінний тур</p>
+              <h3>Кінні прогулянки</h3>
+              <p>2 години</p>
+              <p>1020 грн</p>
+              <p>
+                Кінна прогулянка йде схилами гори біля Долини привидів —
+                стародавнього кам'яного хаосу у вигляді стовпів, колон, в
+                обрисах яких вгадуються образи химерних тварин, лики людей. Під
+                час прогулянки відкриваються чарівні види Алуштинської долини,
+                морського узбережжя.
+              </p>
+              <a href="" class="link">Докладніше</a>
+            </li>
+            <li>
+              <img
+                src="./images/grand-canyon.jpg"
+                alt="Великий каньйон Криму"
+                width="360"
+                height="497"
+              />
+              <p>Квадротур</p>
+              <h3>Великий каньйон Криму</h3>
+              <p>2,5 години</p>
+              <p>1750 грн</p>
+              <p>
+                Маршрут проходить старою Бахчисарайською дорогою, огинаючи з
+                південної та північної сторони Головну гірську гряду півострова.
+                Під час руху екскурсантам відкриваються чудові краєвиди. Це і
+                гірські хребти, вкриті сосновим лісом, і горбисте Ай-Петринське
+                нагір'я, і морська гладь узбережжя.
+              </p>
+              <a href="" class="link">Докладніше</a>
+            </li>
+            <li>
+              <img
+                src="./images/livadia.jpg"
+                alt="Лівадійський палац"
+                width="360"
+                height="497"
+              />
+              <p>Автобусний тур</p>
+              <h3>Лівадія</h3>
+              <p>4 години</p>
+              <p>650 грн</p>
+              <p>
+                Маршрут проходить з Ялти до її найближчого передмістя на заході
+                - Лівадії. Ви відвідаєте Білий Лівадійський палац (1910-1911рр.)
+                , розташований серед зелені ландшафтного парку, побудований у
+                стилі італійського Відродження.
+              </p>
+              <a href="" class="link">Докладніше</a>
+            </li>
+          </ul>
+        </div>
       </section>
+
+      <!-- About -->
+
       <section>
-        <img
-          src="./images/about.jpg"
-          alt="Кримські крайовиди"
-          width="1071"
-          height="749"
-        />
-        <div>
-          <h2>Про нас</h2>
+        <div class="container">
+          <img
+            src="./images/about.jpg"
+            alt="Кримські крайовиди"
+            width="1071"
+            height="749"
+          />
+          <div>
+            <h2>Про нас</h2>
+            <p>
+              <span lang="en">GoTravel</span> - Перший онлайн-сервіс з
+              бронювання екскурсій без черг та операторів. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat.
+            </p>
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Excursions -->
+
+      <section>
+        <div class="container">
+          <h2>Види екскурсій</h2>
+          <ul>
+            <li>
+              <h3>Автобусний тур</h3>
+              <p>
+                Один з найбільш насичених враженнями, доступних за ціною та
+                популярних видів відпочинку. Під час однієї поїздки можна
+                подивитися пам'ятки одразу кількох міст, причому обійдеться це
+                чи не в рази дешевше за класичний екскурсійний тур з ночівлями в
+                готелях.
+              </p>
+            </li>
+            <li>
+              <h3>Джипінг</h3>
+              <p>
+                Це подорож на автомобілях високої прохідності з подоланням
+                природних перешкод, це екстремальний вид спорту та відпочинку,
+                що є проходженням туристичного маршруту бездоріжжям на
+                автомобілях.
+              </p>
+            </li>
+            <li>
+              <h3>Яхтінг</h3>
+              <p>
+                Це те саме, що круїз на лайнері або прогулянка поромом, тільки
+                на яхті більше свободи, розміри судна в рази менші, немає
+                настирливої ​​команди, можна самостійно відчути себе капітаном,
+                постояти за штурвалом. Саме тут ви відчуєте найбільші простори
+                Чорного моря.
+              </p>
+            </li>
+            <li>
+              <h3>Каньйонінг</h3>
+              <p>
+                Це екстремально-спортивний вид відпочинку, який полягає у
+                подоланні каньйонів (обводнених чи ні) за допомогою
+                альпіністського та іншого спорядження, а іноді й вбрід, але без
+                човнів чи інших плавзасобів.
+              </p>
+            </li>
+          </ul>
           <p>
-            <span lang="en">GoTravel</span> - Перший онлайн-сервіс з бронювання
-            екскурсій без черг та операторів. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.
+            Вибирайте на нашому сайті екскурсію, яка підходить саме вам та
+            записуйтесь онлайн без черг, просто та швидко!
           </p>
-          <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo.
-          </p>
+          <a href="./excursions.html" class="link">До екскурсій</a>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+
+      <section class="gallery">
+        <div class="container">
+          <h2>Галерея</h2>
+          <a href="./excursions.html" class="link">Дивитися всі</a>
+          <img
+            src="./images/gallery-01.jpg"
+            alt="Фото екскурсій по Криму"
+            width="500          height="
+            280
+          /><img
+            src="./images/gallery-02.jpg"
+            alt="Фото екскурсій по Криму"
+            width="362          height="
+            567
+          /><img
+            src="./images/gallery-03.jpg"
+            alt="Фото екскурсій по Криму"
+            width="266"
+            height="263"
+          /><img
+            src="./images/gallery-04.jpg"
+            alt="Фото екскурсій по Криму"
+            width="216"
+            height="263"
+          /><img
+            src="./images/gallery-05.jpg"
+            alt="Фото екскурсій по Криму"
+            width="216"
+            height="263"
+          /><img
+            src="./images/gallery-06.jpg"
+            alt="Фото екскурсій по Криму"
+            width="266"
+            height="123"
+          /><img
+            src="./images/gallery-07.jpg"
+            alt="Фото екскурсій по Криму"
+            width="266"
+            height="123"
+          /><img
+            src="./images/gallery-08.jpg"
+            alt="Фото екскурсій по Криму"
+            width="500"
+            height="280"
+          />
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+
+      <section>
+        <div class="container">
+          <h2>Відгуки</h2>
+          <a href="./testimonials.html" class="link">Дивитися всі</a>
+          <ul>
+            <li>
+              <img
+                src="./images/testimonials-01.jpg"
+                alt="Фото екскурсантів"
+                width="245"
+                height="245"
+              />
+              <p>Іван Стус, 25 років</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+                aliquid quasi, rerum sunt sint praesentium tempora vero, itaque
+                optio mollitia aliquam non quas labore corrupti quaerat laborum
+                suscipit porro accusantium?
+              </p>
+            </li>
+            <li>
+              <img
+                src="./images/testimonials-02.jpg"
+                alt="Фото екскурсантів"
+                width="245"
+                height="245"
+              />
+              <p>Дарина Тополя, 25 років</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+                aliquid quasi, rerum sunt sint praesentium tempora vero, itaque
+                optio mollitia aliquam non quas labore corrupti quaerat laborum
+                suscipit porro accusantium?
+              </p>
+            </li>
+          </ul>
         </div>
       </section>
       <section>
-        <h2>Види екскурсій</h2>
-        <ul>
-          <li>
-            <h3>Автобусний тур</h3>
-            <p>
-              Один з найбільш насичених враженнями, доступних за ціною та
-              популярних видів відпочинку. Під час однієї поїздки можна
-              подивитися пам'ятки одразу кількох міст, причому обійдеться це чи
-              не в рази дешевше за класичний екскурсійний тур з ночівлями в
-              готелях.
-            </p>
-          </li>
-          <li>
-            <h3>Джипінг</h3>
-            <p>
-              Це подорож на автомобілях високої прохідності з подоланням
-              природних перешкод, це екстремальний вид спорту та відпочинку, що
-              є проходженням туристичного маршруту бездоріжжям на автомобілях.
-            </p>
-          </li>
-          <li>
-            <h3>Яхтінг</h3>
-            <p>
-              Це те саме, що круїз на лайнері або прогулянка поромом, тільки на
-              яхті більше свободи, розміри судна в рази менші, немає настирливої
-              ​​команди, можна самостійно відчути себе капітаном, постояти за
-              штурвалом. Саме тут ви відчуєте найбільші простори Чорного моря.
-            </p>
-          </li>
-          <li>
-            <h3>Каньйонінг</h3>
-            <p>
-              Це екстремально-спортивний вид відпочинку, який полягає у
-              подоланні каньйонів (обводнених чи ні) за допомогою
-              альпіністського та іншого спорядження, а іноді й вбрід, але без
-              човнів чи інших плавзасобів.
-            </p>
-          </li>
-        </ul>
-        <p>
-          Вибирайте на нашому сайті екскурсію, яка підходить саме вам та
-          записуйтесь онлайн без черг, просто та швидко!
-        </p>
-        <a href="./excursions.html">До екскурсій</a>
-      </section>
-      <section>
-        <h2>Галерея</h2>
-        <a href="./excursions.html">Дивитися всі</a>
-        <img
-          src="./images/gallery-01.jpg"
-          alt="Фото екскурсій по Криму"
-          width="500          height="
-          280
-        /><img
-          src="./images/gallery-02.jpg"
-          alt="Фото екскурсій по Криму"
-          width="362          height="
-          567
-        /><img
-          src="./images/gallery-03.jpg"
-          alt="Фото екскурсій по Криму"
-          width="266"
-          height="263"
-        /><img
-          src="./images/gallery-04.jpg"
-          alt="Фото екскурсій по Криму"
-          width="216"
-          height="263"
-        /><img
-          src="./images/gallery-05.jpg"
-          alt="Фото екскурсій по Криму"
-          width="216"
-          height="263"
-        /><img
-          src="./images/gallery-06.jpg"
-          alt="Фото екскурсій по Криму"
-          width="266"
-          height="123"
-        /><img
-          src="./images/gallery-07.jpg"
-          alt="Фото екскурсій по Криму"
-          width="266"
-          height="123"
-        /><img
-          src="./images/gallery-08.jpg"
-          alt="Фото екскурсій по Криму"
-          width="500"
-          height="280"
-        />
-      </section>
-      <section>
-        <h2>Відгуки</h2>
-        <a href="./testimonials.html">Дивитися всі</a>
-        <ul>
-          <li>
-            <img
-              src="./images/testimonials-01.jpg"
-              alt="Фото екскурсантів"
-              width="245"
-              height="245"
-            />
-            <p>Іван Стус, 25 років</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-              aliquid quasi, rerum sunt sint praesentium tempora vero, itaque
-              optio mollitia aliquam non quas labore corrupti quaerat laborum
-              suscipit porro accusantium?
-            </p>
-          </li>
-
-          <li>
-            <img
-              src="./images/testimonials-02.jpg"
-              alt="Фото екскурсантів"
-              width="245"
-              height="245"
-            />
-            <p>Дарина Тополя, 25 років</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-              aliquid quasi, rerum sunt sint praesentium tempora vero, itaque
-              optio mollitia aliquam non quas labore corrupti quaerat laborum
-              suscipit porro accusantium?
-            </p>
-          </li>
-        </ul>
-      </section>
-      <section>
-        <img
-          src="./images/form.jpg"
-          alt="Форма зворотнього зв'язку"
-          width="1440"
-          height="640"
-        />
+        <div class="container">
+          <img
+            src="./images/form.jpg"
+            alt="Форма зворотнього зв'язку"
+            width="1440"
+            height="640"
+          />
+        </div>
       </section>
     </main>
+
+    <!-- Footer -->
+
     <footer>
-      <a href="./index.html"
-        ><img src="./images/logo_color-01.svg" alt="Логотип"
-      /></a>
-      <nav>
+      <div class="container">
+        <a href="./index.html" class="link"
+          ><img src="./images/logo-color.svg" alt="Логотип"
+        /></a>
+        <nav>
+          <ul>
+            <li><a href="./index.html" class="link">Головна</a></li>
+            <li><a href="./excursions.html" class="link">Екскурсії</a></li>
+            <li>
+              <a href="./personal.html" class="link">Особистий кабінет</a>
+            </li>
+          </ul>
+        </nav>
+        <address>
+          <ul>
+            <li>
+              <a href="tel:+380969441874" class="link">+380 96 944 18 74</a>
+            </li>
+            <li>
+              <a href="tel:+380989199828" class="link">+380 98 919 98 28</a>
+            </li>
+            <li>
+              <a href="https://telegram.me/bot_username" class="link"
+                >Телеграм-бот <span lang="en">GoTravel</span></a
+              >
+            </li>
+          </ul>
+        </address>
+        <address>
+          <a href="mailto:office@gotravel.ua" class="link"
+            >office@gotravel.ua</a
+          >
+        </address>
         <ul>
-          <li><a href="./index.html">Головна</a></li>
-          <li><a href="./excursions.html">Екскурсії</a></li>
-          <li><a href="./personal.html">Особистий кабінет</a></li>
+          <li><a href="" class="link" lang="en">YouTube</a></li>
+          <li><a href="" class="link" lang="en">Instagram</a></li>
+          <li><a href="" class="link" lang="en">FaceBook</a></li>
         </ul>
-      </nav>
-      <address>
-        <ul>
-          <li><a href="tel:+380969441874">+380 96 944 18 74</a></li>
-          <li><a href="tel:+380989199828">+380 98 919 98 28</a></li>
-          <li>
-            <a href="https://telegram.me/bot_username"
-              >Телеграм-бот <span lang="en">GoTravel</span></a
-            >
-          </li>
-        </ul>
-      </address>
-      <address>
-        <a href="mailto:office@gotravel.ua">office@gotravel.ua</a>
-      </address>
-      <ul>
-        <li><a href="" lang="en">YouTube</a></li>
-        <li><a href="" lang="en">Instagram</a></li>
-        <li><a href="" lang="en">FaceBook</a></li>
-      </ul>
+      </div>
     </footer>
   </body>
 </html>
