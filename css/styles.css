@@ -126,7 +126,7 @@ img {
 /* Hero */
 
 .hero {
-	padding-top: 237px;
+	padding-top: 180px;
 	max-width: 1440px;
 	min-height: 789px;
 	margin: 0 auto;
@@ -136,8 +136,9 @@ img {
 			rgba(0, 0, 0, 0.35),
 			rgba(0, 0, 0, 0.35)
 		),
-		url(../images/bg-crimea.jpg);
+		url(../images/mountains-8108961_1920.jpg);
 	background-position: center;
+	background-size: cover;
 }
 
 .hero-title-wrapper {
@@ -158,25 +159,25 @@ img {
 }
 
 .hero-title-accent {
-	margin-left: 400px;
+	margin-left: 300px;
 	font-family: GlorySignaturePersonalUse;
 	font-weight: 400;
 	font-size: 64px;
-	line-height: 0.6;
+	line-height: 1.22;
 	color: #ffc700;
 }
 
 .hero-title-stroke {
 	font-weight: 900;
 	font-size: 96px;
-	line-height: 1.22;
+	line-height: 0.6;
 	color: #ffffff;
 	-webkit-text-fill-color: transparent;
 	-webkit-text-stroke: 2px #ffffff;
 }
 
 .animate__animated.animate__heartBeat {
-	--animate-duration: 2000ms;
+	--animate-duration: 2500ms;
 }
 
 .social-list {
